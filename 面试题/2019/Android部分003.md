@@ -17,7 +17,7 @@ Activity A 启动另一个Activity B 会调用哪些方法？如果B是透明主
 如何启动其他应用的Activity？
 
 Activity的启动过程？（重点）
-
+****
 ## Fragment基础相关 ##
 
 谈一谈Fragment的生命周期 ？与Activity生命周期的不同 ？
@@ -271,7 +271,7 @@ Android5.0~10.0之间大的变化 ？
 
 onCreate()：表示Activity正在被创建，常用来初始化工作，比如调用setContentView加载界面布局资源，初始化Activity所需数据等；
 
-onRestart()：表示Activity正在重新启动，一般情况下，当前Acitivty从不可见重新变为可见时，OnRestart就会被调用；
+onRestart()：表示Activity正在重新启动，一般情况下，**当前Acitivty从不可见重新变为可见时，OnRestart就会被调用**；
 
 onStart()：表示Activity正在被启动，此时Activity可见但不在前台，还处于后台，无法与用户交互；
 
@@ -285,9 +285,9 @@ onDestroy()：表示Activity即将被销毁，这是Activity生命周期中的�
 
 延伸：从整个生命周期来看，onCreate和onDestroy是配对的，分别标识着Activity的创建和销毁，并且只可能有一次调用；
 
-从Activity是否可见来说，onStart和onStop是配对的，这两个方法可能被调用多次；
+从Activity**是否可见**来说，onStart和onStop是配对的，这两个方法可能被调用多次；
 
-从Activity是否在前台来说，onResume和onPause是配对的，这两个方法可能被调用多次；
+从Activity**是否在前台**来说，onResume和onPause是配对的，这两个方法可能被调用多次；
 
 除了这种区别，在实际使用中没有其他明显区别；
 
