@@ -68,6 +68,8 @@ $ git stash apply stash@{1}
 git reset --soft HEAD^
 ```
 
+注意符号^
+
 对于已经 push 的 commit，也可以使用该命令，不过再次 push 时，由于远程分支和本地分支有差异，需要强制推送`git push -f`来覆盖被 reset 的 commit。
 
 **注意**，在`reset --soft`指定 commit 号时，会将该 commit 到最近一次 commit 的所有修改内容全部恢复，而不是只针对该 commit。
