@@ -1,5 +1,11 @@
 # Git扩展记录
 
+## Git log
+
+查看提交记录
+
+查看后输入q退出
+
 ## Stash
 
 使用场景：某一天你正在 feature 分支开发新需求，突然产品经理跑过来说线上有bug，必须马上修复。而此时你的功能开发到一半，于是你急忙想切到 master 分支，然后你就会看到报错
@@ -65,6 +71,8 @@ git reset --soft HEAD^
 对于已经 push 的 commit，也可以使用该命令，不过再次 push 时，由于远程分支和本地分支有差异，需要强制推送`git push -f`来覆盖被 reset 的 commit。
 
 **注意**，在`reset --soft`指定 commit 号时，会将该 commit 到最近一次 commit 的所有修改内容全部恢复，而不是只针对该 commit。
+
+
 
 
 
