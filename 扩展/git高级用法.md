@@ -36,7 +36,7 @@ git stash list
 
 ```
 
-如：
+案例如：
 
 ```
 $ git stash list
